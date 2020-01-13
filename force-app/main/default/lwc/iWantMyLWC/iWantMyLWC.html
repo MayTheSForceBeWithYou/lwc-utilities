@@ -1,0 +1,12 @@
+<template>
+    <template for:each={accts.data} for:item="acct">
+        <lightning-card key={acct.Id} title={acct.Name} icon-name="standard:account">
+            <lightning-combobox
+                label="Account Industry"
+                options={industryOptions}
+                key={acct.Id}
+            >
+            </lightning-combobox>
+            </lightning-card>
+    </template>
+</template>
